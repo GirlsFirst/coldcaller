@@ -20,22 +20,14 @@ if (typeof(Storage) !== "undefined") {
       var public_spreadsheet_url = localStorage.getItem("url");
     }
     else {
-<<<<<<< HEAD
       var public_spreadsheet_url = window.prompt("Public Google Sheet URL: \n(Must have 'name' column.)");
-=======
-      var public_spreadsheet_url = window.prompt("Public Google Sheet URL: ");
->>>>>>> 3f99774c96c728a17c0bee64ef36aaf8fcc8758a
       localStorage.setItem("url", public_spreadsheet_url);
     }
     // Retrieve
     //document.getElementById("result").innerHTML = localStorage.getItem("lastname");
 } else {
   console.log("oops, no browser storage!")
-<<<<<<< HEAD
   var public_spreadsheet_url = window.prompt("Public Google Sheet URL: \n(Must have 'name' column.)");
-=======
-  var public_spreadsheet_url = window.prompt("Public Google Sheet URL: ");
->>>>>>> 3f99774c96c728a17c0bee64ef36aaf8fcc8758a
     //document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
 }
 
